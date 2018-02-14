@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+@font-face {
+  font-family: 'fontawesome';
+  src: url("../fonts/fontawesome.eot");
+  src: url("../fonts/fontawesome.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome.svg#fontawesome") format("svg"), url("../fonts/fontawesome.woff") format("woff"), url("../fonts/fontawesome.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: 'Lato', 'Arial', system, sans-serif; }
+
+.serif {
+  font-family: 'Georgia', serif; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1, h2, p, a {
+  font-weight: 400; }
+
+h1 {
+  font-size: 3em;
+  font-weight: 300; }
+
+h4 {
+  margin-bottom: 5px; }
+
+a {
+  color: #ffffff;
+  text-decoration: underline; }
+
+.underlined {
+  text-decoration: underline;
+  width: 100%; }
+
+strong,
+.bold {
+  font-weight: 900; }
+
+/* Set all parents to full height */
+html, body,
+.container,
+.cbp-fbscroller,
+.cbp-fbscroller section {
+  height: 100%; }
+
+/* The nav is fixed on the right side  and we center it by translating it 50%
+(we don't know it's height so we can't use the negative margin trick) */
+.cbp-fbscroller > nav {
+  position: fixed;
+  z-index: 9999;
+  right: 100px;
+  top: 50%;
+  width: 26px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.cbp-fbscroller > nav a {
+  display: block;
+  position: relative;
+  z-index: 9999;
+  color: transparent;
+  width: 26px;
+  height: 26px;
+  outline: none;
+  margin: 25px 0;
+  border-radius: 50%;
+  border: 4px solid #fff; }
+
+.no-touch .cbp-fbscroller > nav a:hover {
+  background: rgba(255, 255, 255, 0.6); }
+
+.cbp-fbscroller > nav a.cbp-fbcurrent {
+  background: #fff; }
+
+/* background-attachment does the trick */
+.cbp-fbscroller section {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.no-touch .cbp-fbscroller section {
+  background-attachment: fixed; }
+
+#fbsection1 {
+  background-image: url(../images/response.png); }
+
+#fbsection2 {
+  background-image: url(../images/partnership.png); }
+
+#fbsection3 {
+  background-image: url(../images/training.png); }
+
+#fbsection4 {
+  background-image: url(../images/4.jpg); }
+
+#fbsection5 {
+  background-image: url(../images/5.jpg); }

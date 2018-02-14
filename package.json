@@ -1,0 +1,27 @@
+{
+  "name": "unhrd-yir",
+  "version": "1.0.0",
+  "description": "UNHRD year in review web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Barbara Mendes",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.8",
+    "autoprefixer": "^6.6.1",
+    "browserify": "^13.3.0",
+    "ejs": "^2.5.5",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-ejs": "^2.3.0",
+    "gulp-postcss": "^6.2.0",
+    "jquery": "^3.1.1",
+    "scrollmagic": "^2.0.5"
+  }
+}
