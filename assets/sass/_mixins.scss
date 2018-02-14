@@ -1,0 +1,25 @@
+// transition mixin, add property and duration
+@mixin transition($prop, $duration) {
+  transition: $prop $duration cubic-bezier(.65, .05, .36, 1);
+}
+
+// color mixin add color
+@mixin color($color) {
+  color: $color;
+}
+
+// function creates alignment classes
+@each $position in left, right, center {
+  .text-#{$position} {
+    text-align: #{$position};
+
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+  }
+}
+
+// animation classes
+@mixin animation($animation, $duration) {
+  animation: $animation $duration cubic-bezier(.65, .05, .36, 1);
+}

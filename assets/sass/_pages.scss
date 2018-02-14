@@ -1,0 +1,365 @@
+* {
+  transition: 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) all;
+}
+// Set all parents to full height
+
+.cbp-fbscroller,
+.cbp-fbscroller section,
+.container,
+body,
+html {
+  height: 100%;
+}
+/* The nav is fixed on the right side  and we center it by translating it 50%
+(we don't know it's height so we can't use the negative margin trick) */
+.cbp-fbscroller {
+  nav {
+    position: fixed;
+    right: 100px;
+    top: 50%;
+    width: 26px;
+    z-index: 9999;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    a {
+      display: block;
+      position: relative;
+      z-index: 9999;
+      color: transparent;
+      width: 26px;
+      height: 26px;
+      outline: none;
+      margin: 25px 0;
+      border-radius: 50%;
+      border: 4px solid #fff;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.6);
+      }
+
+      &.cbp-fbcurrent {
+        background: #fff;
+      }
+    }
+  }
+}
+
+.cbp-fbscroller section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // padding: 50px;
+  position: relative;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.no-touch .cbp-fbscroller section {
+  background-attachment: fixed;
+}
+
+#maintitle {
+  background-attachment: fixed;
+  background-image: url("../images/main.jpg");
+  background-size: cover;
+  height: 100vh;
+
+  h1 {
+    font-size: 100px;
+    font-weight: 900;
+  }
+
+  h3 {
+    font-size: 64px;
+    font-weight: 900;
+  }
+}
+
+#response {
+  background-image: linear-gradient(-150deg,#4b20bf,#0e5cde,#04a7e5);
+  height: 100vh;
+
+  .unhrd-numbers {
+    align-content: center;
+    background: rgba(0, 0, 0, .2);
+    display: grid;
+    font-size: 18px;
+    height: 200px;
+    margin: 20px;
+    padding: 0 20px;
+    position: relative;
+    text-align: center;
+
+    span {
+      color: $blue;
+      text-transform: uppercase;
+      z-index: 0;
+    }
+
+    .icon {
+      bottom: 10px;
+      color: $blue;
+      font-size: 100px;
+      left: 10px;
+      opacity: 0.3;
+      position: absolute;
+      width: 80px;
+      height: 80px;
+    }
+
+    strong {
+      display: block;
+      font-size: 48px;
+      font-weight: 900;
+    }
+  }
+}
+
+#response1 {
+  background-image: url("../images/response.png");
+}
+
+#response2 {
+  background-image: url(../images/ecuador.svg), linear-gradient(-150deg,#4b20bf,#0e5cde,#04a7e5);
+
+  .partners {
+    width: 70%;
+
+    > div {
+      text-align: center;
+    }
+
+    img {
+      margin-right: 10px;
+      height: 50px;
+
+      &.opt {
+        height: 70px;
+      }
+    }
+  }
+}
+
+#response3 {
+  background-image: url(../images/who.svg), linear-gradient(-150deg,#30499B,#30499B);
+}
+
+#response4 {
+  background-image: url("../images/japan.jpg");
+}
+
+#response51 {
+  background-image: url("../images/IAEthiopia.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#response52 {
+  background-image: url("../images/IACAR.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#response53 {
+  background-image: url("../images/IAEthiopia2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#response54 {
+  background-image: url("../images/IASouthSudan.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#preparedness {
+  background-image: linear-gradient(-150deg, #84070c, #bd050d);
+  height: 100vh;
+
+  h1 {
+    font-size: 140px;
+    font-weight: 900;
+  }
+}
+
+#preparedness1 {
+  background-image: url("../images/preparedness1.jpg");
+}
+
+#preparedness2 {
+  background-image: url("../images/preparedness1.jpg");
+}
+
+#preparedness3 {
+  background-image: url("../images/preparedness3.jpg");
+}
+
+#preparedness4 {
+  background-image: url("../images/preparedness4.png");
+  background-size: cover;
+}
+
+#partners {
+  background-image: linear-gradient(170deg,#b3de62,#d1e351);
+  height: 100vh;
+
+  h1 {
+    font-size: 140px;
+    font-weight: 900;
+  }
+}
+
+#partner1 {
+  background-image: url("../images/partner1.jpg");
+}
+
+#partner2 {
+  background-image: url("../images/partner2.jpg");
+}
+
+#partner3 {
+  background-image: url("../images/partner3.jpg");
+}
+
+#partner4 {
+  background-image: linear-gradient(170deg,#33691E,#7CB342);
+}
+
+#catalogue1 {
+  background-image: url("../images/catalogue1.jpg");
+  background-size: cover;
+}
+
+#catalogue2 {
+  background-image: url("../images/catalogue2.jpg");
+  background-size: cover;
+}
+
+#catalogue3 {
+  background-color: #fff;
+  background-image: url("../images/catalogue3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 10px;
+}
+
+#training {
+  background-image: linear-gradient(170deg,#fd971b,#fd5b1b);
+  height: 100vh;
+
+  h1 {
+    font-size: 140px;
+    font-weight: 900;
+  }
+}
+
+#training1 {
+  background-image: url("../images/training1.jpg");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+#training2 {
+  background-image: url("../images/training2.jpg");
+  background-size: cover;
+}
+
+#training3 {
+  background-color: #990033;
+}
+
+#training31 {
+  background-color: rgb(12,43,128);
+  background-image: url("../images/training3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#training32 {
+  background-image: url("../images/training32.jpg");
+  background-size: cover;
+}
+
+#last {
+  background-image: url("../images/last.jpg");
+  padding: 0 50px;
+
+  .icon {
+    background-color: #0e5cde;
+    border-radius: 5px;
+    display: inline-block;
+    height: 75px;
+    text-align: center;
+    width: 75px;
+  }
+
+  h4 {
+    font-size: 24px;
+    margin: 0;
+  }
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 900;
+
+  p {
+    font-size: 18px;
+  }
+}
+
+.org {
+  font-size: 100px;
+  margin-top: 50px;
+
+  &-small {
+    font-size: 50px;
+  }
+}
+
+.numbers {
+  font-size: 35px;
+  font-weight: 900;
+  margin: 50px 40px 0;
+  text-align: center;
+
+  span.number {
+    font-size: 50px;
+  }
+}
+
+.info {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: 50px 0;
+  position: relative;
+}
+
+.country-bg {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  z-index: -1;
+
+  &.right {
+    right: 0;
+  }
+}
+
+.new-partners {
+  background-color: #fff;
+  margin-top: 50px;
+  width: 100%;
+}

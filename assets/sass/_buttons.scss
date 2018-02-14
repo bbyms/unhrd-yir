@@ -1,0 +1,31 @@
+.btn {
+  background: $primary;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 12px 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    background: $blue-darker;
+    transition: all .2s ease-in;
+  }
+}
+
+.btn-outline {
+  border: 3px solid #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 12px 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    background: rgba(255, 255, 255, .2);
+    transition: all .2s ease-in;
+  }
+}

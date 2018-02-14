@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+section {
+  background-attachment: fixed;
+  background-image: linear-gradient(-150deg,#4b20bf,#0e5cde,#04a7e5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  color: $white;
+  min-height: 100vh;
+  padding: 30px;
+  position: relative;
+}
+
+.section-center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  .grid {
+    width: 80%;
+  }
+}
+
+.partner-area {
+  align-items: center;
+  background-color: $white;
+  box-sizing: border-box;
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 10px;
+  justify-items: center;
+
+  img {
+    max-height: 45px;
+    max-width: 100%;
+  }
+}
+
+.partners {
+  background-color: $white;
+  box-sizing: border-box;
+  min-height: calc(100vh - 60px);
+  padding: 20px;
+
+  img {
+    margin-bottom: 20px;
+  }
+}
+
+.overlay {
+  background-color: rgba(0,0,0,.8);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+// Background images
+#maintitle {
+  background-image: url("../images/main.jpg");
+}
+
+#response {
+  background-image: linear-gradient(-150deg,#4b20bf,#0e5cde,#04a7e5);
+}
+
+#bangladesh {
+  background-image: url("../images/main.jpg");
+}
+
+#slide4 {
+  background-image: url("../images/2017/sheltlerbox/07.jpg");
+}

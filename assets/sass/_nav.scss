@@ -1,0 +1,50 @@
+.nav {
+  left: 30px;
+  position: fixed;
+  top: 30px;
+  z-index: 4;
+
+  &-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-item {
+    margin-bottom: 16px;
+
+    &-circle {
+      @include transition(transform, .3s);
+      background-color: rgba(0, 0, 0, .5);
+      border: 1px solid $dimmed;
+      border-radius: 50%;
+      display: inline-block;
+      height: 16px;
+      vertical-align: bottom;
+      width: 16px;
+
+      &:hover {
+        @include transition(all, .3s);
+        background: $primary;
+        transform: scale(1.2);
+      }
+    }
+
+    &-link {
+      color: $dimmed;
+      font-size: 12px;
+      text-decoration: none;
+
+      span {
+        opacity: 0;
+      }
+
+      &:hover {
+        span {
+          @include transition(opacity, .3s);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

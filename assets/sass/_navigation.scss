@@ -1,0 +1,6 @@
+@mixin padding($value) {
+	top: $value;
+	left: $value;
+	right: $value;
+	bottom: $value;
+}

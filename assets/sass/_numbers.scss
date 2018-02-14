@@ -1,0 +1,39 @@
+.unhrd-numbers {
+  align-content: center;
+  background: rgba(0, 0, 0, .2);
+  display: grid;
+  font-size: 18px;
+  height: 200px;
+  margin: 20px;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+
+  span {
+    text-transform: uppercase;
+    z-index: 0;
+  }
+
+  .icon {
+    bottom: 10px;
+    color: $blue;
+    font-size: 100px;
+    left: 10px;
+    opacity: 0.3;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+  }
+
+  strong {
+    display: block;
+    font-size: 48px;
+    font-weight: 900;
+  }
+}
+
+.numbers {
+  h1 {
+    margin-bottom: 0;
+  }
+}
