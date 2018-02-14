@@ -6,5 +6,7 @@
 
 ### How do I get set up? ###
 
-* (sudo) npm install
-* gulp
+* (sudo) npm install - to install dependencies
+* gulp, will open default browser @ localhost:9000
+* Uses EJS for templating - task: gulp templates
+* Uses SCSS as a CSS precompiler - task: gulp sass
